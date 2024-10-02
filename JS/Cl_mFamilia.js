@@ -9,7 +9,7 @@ export default class Cl_mFamilia {
     set familia(fA) { 
         this._familia = fA;
     }
-    get familia() { 
+    get familia() {
         return this._familia;
     }
     set personas(p) { 
@@ -30,6 +30,4 @@ export default class Cl_mFamilia {
     get dineroInicial() { 
         return this._diaInicial;
     }
-
-
 }
