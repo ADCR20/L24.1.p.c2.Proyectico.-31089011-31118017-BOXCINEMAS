@@ -30,4 +30,5 @@ export default class Cl_mFamilia {
      return (personas*3);    
  }
 
+ 
 }

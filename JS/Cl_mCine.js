@@ -6,7 +6,6 @@ export default class Cl_mCine {
         this.acumTotal = " ";
         this.dineroInicial = dineroInicial;
     }
-    set
     procesarFamilia(f) { 
         
         // familia que más pagó
@@ -18,7 +17,7 @@ export default class Cl_mCine {
         // acumulador de ventas lunes 
 
         if (f.dia == 1) {
-        this.acuLunes =+ f.montopagar();
+        this.acuLunes =+ f.montoPagar();
         }
         if (f.dia == 1) {
             this.contLunes++;
