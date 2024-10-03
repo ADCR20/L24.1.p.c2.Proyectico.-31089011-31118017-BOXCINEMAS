@@ -1,10 +1,9 @@
 export default class Cl_mFamilia { 
 
-    constructor ({ familia, personas, dia, dineroInicial }) {
+    constructor ({ familia, personas, dia }) {
         this.familia = familia;
         this.personas = personas;
         this.dia = dia;
-        this.dineroInicial = dineroInicial;
     }
     set familia(fA) { 
         this._familia = fA;
@@ -18,16 +17,17 @@ export default class Cl_mFamilia {
     get personas () { 
         return this._personas;
     }
-    set dia(d) { 
+    set dia (d) { 
         this._dia = d;
     }
-    get dia() { 
+    get dia () { 
         return this._dia;
     }
-    set dineroInicial(dI) { 
-        this._diaInicial = dI;
-    }
-    get dineroInicial() { 
-        return this._diaInicial;
-    }
+    montoPagar() { 
+        if (dia == 1) 
+         return (personas*3)/2;
+     else 
+     return (personas*3);    
+ }
+
 }
