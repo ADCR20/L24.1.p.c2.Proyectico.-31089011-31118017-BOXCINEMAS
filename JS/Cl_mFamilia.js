@@ -25,10 +25,10 @@ export default class Cl_mFamilia {
     }
     montoPagar() { 
         if (dia == 1) 
-         return (personas*3)/2;
+         return (personas * 3)/2;
      else 
-     return (personas*3);    
+     return (personas * 3);    
  }
 
- 
+
 }

@@ -2,22 +2,23 @@ export default class Cl_mCine {
     constructor(){ 
         this.acuLunes = 0;
         this.contLunes = 0;
-        this.auxMayor = " ";
-        this.acumTotal = " ";
+        this.mayor = 0;
+        this.auxfamilia = "";
+        this.acumTotal = "";
         this.dineroInicial = dineroInicial;
     }
-    procesarFamilia(f) { 
+    procesarFamilia (f) { 
         
         // familia que más pagó
-        if (f.montoPagar() > this.auxMayor) { 
-            this.auxMayor = f.montoPagar();
-            this.auxMayor = f.familia;
+        if (f.montoPagar () > this.auxMayor) { 
+            this.mayor = f.montoPagar ();
+            this.auxfamilia = f.familia;
         }
 
         // acumulador de ventas lunes 
 
         if (f.dia == 1) {
-        this.acuLunes =+ f.montoPagar();
+        this.acuLunes =+ f.montoPagar ();
         }
         if (f.dia == 1) {
             this.contLunes++;
@@ -35,4 +36,7 @@ export default class Cl_mCine {
      totalCaja() { 
         return (this.acumTotal + this.dineroInicial);
      }
+     devolverAuxNombre() { 
+        return this.auxMayor;
+     } 
 }
