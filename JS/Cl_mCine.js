@@ -1,27 +1,26 @@
+import {Cl_Familia} from "./Cl_mFamilia.js";
 export default class Cl_mCine { 
-    constructor(){ 
+    constructor(acumlunes, contlunes, mayor, auxfamilia, acumtotal, dinero){ 
         this.acuLunes = 0;
         this.contLunes = 0;
-        this.mayor = 0;
+        this.auxMayor = 0;
         this.auxfamilia = "";
-        this.acumTotal = "";
-        this.dineroInicial = dineroInicial;
+        this.acumTotal = 0;
+        this.dineroInicial = 0;
     }
     procesarFamilia (f) { 
         
         // familia que más pagó
-        if (f.montoPagar () > this.auxMayor) { 
-            this.mayor = f.montoPagar ();
+        if (f.montoPagar() > this.auxMayor) { 
+            this.mayor = f.montoPagar();
             this.auxfamilia = f.familia;
         }
 
         // acumulador de ventas lunes 
 
         if (f.dia == 1) {
-        this.acuLunes =+ f.montoPagar ();
-        }
-        if (f.dia == 1) {
-            this.contLunes++;
+        this.acuLunes =+ f.montoPagar();
+        this.contLunes++;
         }
 
         // acumulador de todas las ventas
