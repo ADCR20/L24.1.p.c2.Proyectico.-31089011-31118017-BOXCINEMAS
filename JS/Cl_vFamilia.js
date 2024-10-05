@@ -9,9 +9,9 @@ export class Cl_vFamilia { //prefijo "in" es por input
     this.btAceptar.onclick = () =>
     
     controlador.agregarfamilia({
-        familia = this.infamilia.value,
-        personas = this.inpersonas.value,
-        dia = this.india.value,
+        familia: this.infamilia.value,
+        personas: this.inpersonas.value,
+        dia: this.india.value,
     });
         this.ocultar();
 
