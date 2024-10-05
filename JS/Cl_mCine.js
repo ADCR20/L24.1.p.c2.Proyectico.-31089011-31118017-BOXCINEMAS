@@ -1,4 +1,4 @@
-import {Cl_Familia} from "./Cl_mFamilia.js";
+import {Cl_mFamilia} from "./Cl_mFamilia.js";
 export default class Cl_mCine { 
     constructor(acumlunes, contlunes, mayor, auxfamilia, acumtotal, dinero){ 
         this.acuLunes = 0;

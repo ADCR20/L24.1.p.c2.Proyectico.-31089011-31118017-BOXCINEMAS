@@ -24,7 +24,7 @@ export default class Cl_mFamilia {
         return this._dia;
     }
     montoPagar() { 
-        if (dia == 1) 
+        if (this.dia == 1) 
          return (personas * 3)/2;
      else 
      return (personas * 3);    
