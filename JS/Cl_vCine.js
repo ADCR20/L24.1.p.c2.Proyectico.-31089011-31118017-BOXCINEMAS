@@ -5,7 +5,7 @@ this.tabla = document.getElementById("mainform_table");
 this.lblFamilia = document.getElementById("mainform_lblFamilia");
 this.lblPromedio = document.getElementById("main_lblPromedio");
 this.lblTotal = document.getElementById("mainform_lblTotal");
-this.btAgregar = document.getElementById("mainform.btAgregar");
+this.btAgregar = document.getElementById("mainform_btAgregar");
 this.btAgregar.onclick = () => controlador.mostrarVFamilia();
 }
 //verificar reportarCine
