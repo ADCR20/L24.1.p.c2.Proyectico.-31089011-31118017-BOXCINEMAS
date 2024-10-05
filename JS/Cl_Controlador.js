@@ -36,4 +36,5 @@ mostrarVCine(){//oculta la vista familia y muestra la vista cine
     this.vFamilia.Ocultar();
     this.vCine.mostrar();
     }
+    /// prueba de actuali9zación no hay cambios
 } 
