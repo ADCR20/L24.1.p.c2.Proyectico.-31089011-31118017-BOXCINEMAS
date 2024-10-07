@@ -21,13 +21,13 @@ mostrarVistaCine(){//oculta la vista familia y muestra la vista cine
     }
 
     agregarFamilia ({ familia, personas, dia }) {
-        let familia = new Cl_mFamilia  ({ familia, personas, dia });
-        this.mCine.procesarFamilia (f);
+        let family = new Cl_mFamilia  ({ familia, personas, dia });
+        this.mCine.procesarFamilia (family);
         this.vCine.reportarFamilia ({ 
-            familia: familia.familia, // creo que el famlia del medio debería ser family pero no estoy segura
-            personas: familia.personas,
-            dia: familia.dia,
-            montoPagar: familia.montoPagar(),
+            familia: family.familia, // creo que el famlia del medio debería ser family pero no estoy segura
+            personas: family.personas,
+            dia: family.dia,
+            montoPagar: family.montoPagar(),
             promLunes: this.mCine.promLunes(),
             totalCaja: this.mCine.totalCaja(),
             devolverAuxNombre: this.mCine.devolverAuxNombre(),

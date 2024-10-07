@@ -9,24 +9,33 @@ this.btAgregar = document.getElementById("mainform_btAgregar");
 this.btAgregar.onclick = () => controlador.mostrarVFamilia();
 }
 //verificar reportarCine
-reportarCine((acumlunes, contlunes, mayor, auxfamilia, acumtotal, dinero)) {
+reportarCine({
+  acumlunes, 
+  contlunes, 
+  auxMayor, 
+  devolverAuxNombre, 
+  acumtotal, 
+  dineroInicial,
+  totalCaja,
+  promLunes
+}) {
   this.tabla.innerHTML += `
   <tr>
   <td>${Familia}</td>
   <td>${Personas}</td>
   <td>${Día}</td>
-  <td>${Monto a pagar}</td>
+  <td>${Monto}</td>
   </tr>`;
 
-  this.lblFamilia.innerHTML = ;
-  this.lblPromdeio.innerHTML = ;
-  this.lbltotal.innerHTML =;
-
-  mostrar(){
+  this.lblFamilia.innerHTML = auxFamilia;
+  this.lblPromdeio.innerHTML = promLunes;
+  this.lbltotal.innerHTML =totalCaja;
+}
+  mostrarVCine(){
     this.vista.hidden = false;
     }
 
-  ocultar(){
+  ocultarVCine(){
     this.vista.hidden = true;
     }
 

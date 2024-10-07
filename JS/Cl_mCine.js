@@ -1,7 +1,7 @@
 import {Cl_mFamilia} from "./Cl_mFamilia.js";
 export default class Cl_mCine { 
     constructor(acumlunes, contlunes, mayor, auxfamilia, acumtotal, dinero){ 
-        this.acuLunes = 0;
+        this.acumLunes = 0;
         this.contLunes = 0;
         this.auxMayor = 0;
         this.auxfamilia = "";
@@ -19,7 +19,7 @@ export default class Cl_mCine {
         // acumulador de ventas lunes 
 
         if (f.dia == 1) {
-        this.acuLunes =+ f.montoPagar();
+        this.acumLunes =+ f.montoPagar();
         this.contLunes++;
         }
 
@@ -28,7 +28,7 @@ export default class Cl_mCine {
     }
     promLunes() {
         if (this.contLunes > 0)
-            return (this.acuLunes/this.contLunes);
+            return (this.acumLunes/this.contLunes);
         else
         return 0;
      }
