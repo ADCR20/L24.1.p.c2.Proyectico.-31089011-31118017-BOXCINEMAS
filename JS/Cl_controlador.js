@@ -34,5 +34,5 @@ mostrarVistaCine(){//oculta la vista familia y muestra la vista cine
         });
         this.mostrarVistaCine(); 
     }
-
+//5
 } 
